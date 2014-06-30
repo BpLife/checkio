@@ -35,6 +35,7 @@
 # min([[1,2], [3, 4], [9, 0]], key=lambda x: x[1]) == [9, 0]
 # How it is used: This task will help you understand how some of the built-in functions work on a more precise level.
 
+#the one
 import types
 def max(*args, **kwargs):
     key = kwargs.get("key", None)
@@ -102,7 +103,7 @@ print(max([1, 2, 3], [5, 6], [7], [0, 0, 0, 1]))
 
 
 
-
+#two
 def minSimple(arg1, arg2, key):
     if key != None and key(arg1) <= key(arg2) or key == None and arg1 < arg2:
         return arg1
@@ -132,7 +133,7 @@ def min(*args, key=None):
     return result
 
 
-
+#three
 def get_first_from_sorted(args, key, reverse):
     if len(args) == 1:
         args = iter(args[0])
